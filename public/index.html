@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="client.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <title>Mccstan Socket.IO</title>
+    <style>
+    </style>
+  </head>
+  <body id="logged-out" class="container">
+    <div class="jumbotron">
+      <h1>Socket.io</h1>
+      <h3>mccstan learning page</h3>
+    </div>
+    <section id="chat">
+      <ul id="messages"></ul>
+      <form action="">
+        <input  id="m" autocomplete="off" />
+        <button>Send</button>
+      </form>
+    </section>
+    <section id="login">
+      <form action="">
+        <label for="u">Username</label>
+        <input id="u" autocomplete="off" autofocus />
+        <p>
+          <button class="btn btn-primary">Login</button>
+        </p>
+      </form>
+    </section>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+  </body>
+</html>
